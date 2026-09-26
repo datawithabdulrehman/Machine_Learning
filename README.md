@@ -1,5 +1,9 @@
 # 📊 Machine Learning Projects — Abdul Rehman
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/datawithabdulrehman/Machine_Learning/main/Notes/machine_learning.png" alt="Machine Learning Overview Banner" width="100%">
+</p>
+
 Hi, I'm **Abdul Rehman** 👋 — a BS Data Science student passionate about turning raw data into real, working solutions. This repository is a collection of my Machine Learning projects, notebooks, and experiments, covering everything from data cleaning and EDA to model building and deployment.
 
 ---
@@ -27,6 +31,10 @@ I'm currently studying **BS Data Science** and building hands-on experience in D
 ---
 
 ## 🚀 Featured Projects
+
+### 🚗 Pakistan Car Price Prediction
+A machine learning app predicting used car prices in Pakistan based on brand, mileage, model year, and specifications, deployed as an interactive Streamlit web app.
+- 🔗 Live Demo: [Pakistan Car Price Predictor App](https://pakistan-car-prediction-abxrehman.streamlit.app/)
 
 ### 🧠 Mental Health Score Predictor
 A machine learning project that analyzes and predicts mental health scores based on lifestyle and behavioral data.
@@ -56,47 +64,4 @@ A machine learning model predicting the outcome of the Formula 1 2026 World Driv
 
 ## 📂 Repository Structure
 
-This repository is organized into folders (`ML-01`, `ML-02`, ...), each covering a different Machine Learning topic with its own notebooks, datasets, and reference material.
-
-```
-Machine_Learning/
-│
-├── ML-01/                      # Regression basics
-│   ├── heart.csv
-│   ├── Heart.ipynb
-│   ├── insurance.csv
-│   ├── insurance.ipynb
-│   └── Machine Learning.pdf
-│
-├── ML-02/                      # Linear Regression theory
-│   └── Linear Regression.pdf
-│
-├── ML-03/                      # Classification — Heart Disease Prediction (deployed app)
-│   ├── app.py
-│   ├── classification.pdf
-│   ├── heart_columns.pkl
-│   ├── heart_scaler.pkl
-│   ├── HeartdiseaseFinal.ipynb
-│   └── knn_heart_model.pkl
-│
-└── ML-04/                      # Advanced ML — Clustering, Ensemble Learning, GridSearchCV, PCA
-    ├── Advancestuff.pdf
-    ├── Clustring.ipynb
-    ├── EnsembleLearning.ipynb
-    ├── GridSearchCV.ipynb
-    └── PCADimensions.ipynb
-```
-
-**Topics covered:**
-- **ML-01:** Regression fundamentals — Heart & Insurance datasets
-- **ML-02:** Linear Regression — theory and notes
-- **ML-03:** Classification with KNN — Heart Disease Prediction model, deployed as a Streamlit app (`app.py`)
-- **ML-04:** Advanced ML — Clustering, Ensemble Learning, Hyperparameter Tuning (GridSearchCV), and Dimensionality Reduction (PCA)
-
----
-
-## 📬 Get in Touch
-
-If you'd like to collaborate, have a question, or just want to connect, feel free to reach out through [LinkedIn](https://www.linkedin.com/in/datawithabdulrehman) or check out more of my work on my [Portfolio](https://datawithabdulrehman.github.io/ABXREHMAN-PORTFOLIO/).
-
-⭐ If you find any of these projects useful, consider giving this repo a star!
+This repository is organized into specific topic modules, each containing hands-on notebooks, datasets, model files, and study notes.
