@@ -1,7 +1,7 @@
 # 📊 Machine Learning Projects — Abdul Rehman
 
 <p align="center">
-  <img src="https://githubusercontent.com" alt="Machine Learning Overview Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/datawithabdulrehman/Machine_Learning/main/Notes/machine_learning.png" alt="Machine Learning Overview Banner" width="100%">
 </p>
 
 Hi, I'm **Abdul Rehman** 👋 — a BS Data Science student passionate about turning raw data into real, working solutions. This repository is a collection of my Machine Learning projects, notebooks, and experiments, covering everything from data cleaning and EDA to model building and deployment.
