@@ -65,3 +65,57 @@ A machine learning model predicting the outcome of the Formula 1 2026 World Driv
 ## 📂 Repository Structure
 
 This repository is organized into specific topic modules, each containing hands-on notebooks, datasets, model files, and study notes.
+Machine_Learning/
+│
+├── ML-01/                              # Regression Basics
+│   ├── heart.csv
+│   ├── Heart.ipynb
+│   ├── insurance.csv
+│   ├── insurance.ipynb
+│   └── Machine Learning.pdf
+│
+├── ML-02/                              # Linear Regression & Price Prediction
+│   ├── ford-car-price-prediction.ipynb
+│   └── Linear Regression.pdf
+│
+├── ML-03/                              # Classification & Model Comparison
+│   ├── Models/
+│   │   └── OUTPUT/
+│   │       └── titanic-step-by-step-model-comparison.ipynb
+│   ├── app.py                          # Streamlit Deployment
+│   ├── classification.pdf
+│   ├── heart_columns.pkl
+│   ├── heart_scaler.pkl
+│   ├── HeartdiseaseFinal.ipynb
+│   └── knn_heart_model.pkl
+│
+├── ML-04/                              # Advanced Machine Learning
+│   ├── Advancestuff.pdf
+│   ├── Clustring.ipynb
+│   ├── EnsembleLearning.ipynb
+│   ├── GridSearchCV.ipynb
+│   └── PCADimensions.ipynb
+│
+└── Notes/                              # Resources & Visual Summaries
+├── cheatsheet-supervised-learning.pdf
+├── cheatsheet-unsupervised-learning.pdf
+├── machine_learning.png
+└── ML Learning Hub.html
+
+
+
+
+**Topics covered:**
+- **ML-01:** Regression fundamentals using Heart & Insurance datasets[cite: 1].
+- **ML-02:** Linear Regression theory and Ford car price prediction modeling[cite: 1].
+- **ML-03:** Classification with KNN (Heart Disease deployment via `app.py`) and step-by-step model comparison using the Titanic dataset[cite: 1].
+- **ML-04:** Advanced ML topics including K-Means Clustering, Ensemble Learning, Hyperparameter Tuning (`GridSearchCV`), and Dimensionality Reduction (`PCA`)[cite: 1].
+- **Notes:** Supervised & Unsupervised cheatsheets, graphics, and interactive learning hub notes[cite: 1].
+
+---
+
+## 📬 Get in Touch
+
+If you'd like to collaborate, have a question, or just want to connect, feel free to reach out through [LinkedIn](https://www.linkedin.com/in/datawithabdulrehman) or check out more of my work on my [Portfolio](https://datawithabdulrehman.github.io/ABXREHMAN-PORTFOLIO/).
+
+⭐ If you find any of these projects useful, consider giving this repo a star!
