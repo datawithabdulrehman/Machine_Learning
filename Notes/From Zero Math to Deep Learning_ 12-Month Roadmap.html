@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>From Zero Math to Deep Learning: A 12-Month Roadmap</title>
+<style>
+:root{--bg:#f4f6f9;--fg:#16202e;--mut:#5b6676;--line:#c9d1dc;--ac:#1f5fbf;--soft:#e6edf8;--mile:#fff4d6;--mileb:#d9a400;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161f;--fg:#e8edf4;--mut:#9aa7b8;--line:#2b3747;--ac:#6ea3ff;--soft:#1a2535;--mile:#2a2512;--mileb:#c9a227}}
+:root[data-theme="dark"]{--bg:#10161f;--fg:#e8edf4;--mut:#9aa7b8;--line:#2b3747;--ac:#6ea3ff;--soft:#1a2535;--mile:#2a2512;--mileb:#c9a227}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:40px 20px 64px}
+h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:700;letter-spacing:-.02em}
+.lead{color:var(--mut);max-width:62ch;margin:14px 0 28px}
+.overview{width:100%;border-collapse:collapse;margin:0 0 48px;font-size:.95rem}
+.overview th,.overview td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+.overview th{color:var(--mut);font-weight:600}
+.overview a{color:var(--ac);text-decoration:none}
+.overview a:hover,.overview a:focus-visible{text-decoration:underline}
+.track{position:relative;margin-left:18px;padding-left:34px;border-left:3px solid var(--ac)}
+.phase{position:relative;padding-bottom:52px}
+.phase::before{content:attr(data-n);position:absolute;left:-54px;top:0;width:36px;height:36px;border-radius:50%;background:var(--ac);color:var(--bg);display:grid;place-items:center;font:700 1rem Georgia,serif}
+h2{font-size:1.6rem}
+.wk{color:var(--mut);margin:2px 0 14px;font-size:.92rem}
+.row{padding:14px 0;border-top:1px solid var(--line)}
+.row h3{margin:0 0 4px;font-size:.95rem;font-weight:700;color:var(--ac)}
+.row p,.row ul{margin:0}
+.row ul{padding-left:20px}
+.row li{margin:3px 0}
+.mile{background:var(--mile);border-left:4px solid var(--mileb);padding:14px 16px;margin-top:6px;border-radius:0 6px 6px 0}
+.mile h3{color:var(--fg)}
+.sub{background:var(--soft);padding:12px 16px;border-radius:6px;margin:8px 0}
+.sub b{display:block}
+.tips{border-top:3px solid var(--ac);padding-top:20px;margin-top:8px}
+.tips ol{padding-left:22px}
+.tips li{margin:8px 0}
+.end{color:var(--mut);margin-top:28px}
+@media (max-width:520px){.track{margin-left:14px;padding-left:26px}.phase::before{left:-46px}}
+a:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<h1>From Zero Math to Deep Learning</h1>
+<p class="lead">A 12-month plan at about 8-10 hours a week. You do not need to be a "math person." Deep learning uses a small slice of math, and almost all of it can be understood visually before you meet a formula. If a phase takes longer, that is fine: this is a staircase, not a race.</p>
+
+<table class="overview">
+<tr><th>Phase</th><th>Topic</th><th>Weeks</th></tr>
+<tr><td>1</td><td><a href="#p1">Python, NumPy &amp; math basics</a></td><td>1-6</td></tr>
+<tr><td>2</td><td><a href="#p2">Linear algebra</a></td><td>7-12</td></tr>
+<tr><td>3</td><td><a href="#p3">Calculus</a></td><td>13-18</td></tr>
+<tr><td>4</td><td><a href="#p4">Probability &amp; statistics</a></td><td>19-25</td></tr>
+<tr><td>5</td><td><a href="#p5">Optimization &amp; backpropagation</a></td><td>26-31</td></tr>
+<tr><td>6</td><td><a href="#p6">Deep learning: NN, CNN, RNN, Transformers</a></td><td>32-52</td></tr>
+</table>
+
+<div class="track">
+
+<section class="phase" id="p1" data-n="1">
+<h2>Foundations</h2>
+<p class="wk">Weeks 1-6 · Python + NumPy + the math you forgot</p>
+<div class="row"><h3>Core math concepts</h3><ul>
+<li><b>Weeks 1-2:</b> fractions, percentages, exponents, square roots, and logarithms (the opposite of exponents).</li>
+<li><b>Weeks 3-4:</b> solving for x, functions as machines (input in, output out), reading graphs, straight lines (y = mx + b), and the sum symbol Σ ("add them all up").</li>
+<li><b>Weeks 5-6:</b> Python basics (variables, loops, functions, lists, dictionaries), then NumPy arrays, shapes, indexing, broadcasting.</li></ul></div>
+<div class="row"><h3>AI/ML connection</h3><p>A neural network is a giant function: numbers in, numbers out. Algebra teaches you to read it, and logs and exponents appear in nearly every loss function. This phase is learning the alphabet before writing sentences.</p></div>
+<div class="row"><h3>Code application</h3><p>Python, NumPy (the base of every AI library), and Matplotlib for plotting your functions.</p></div>
+<div class="row"><h3>Best free visual resources</h3><ul>
+<li>Khan Academy: Pre-algebra and Algebra 1 (use the quizzes to skip what you know)</li>
+<li>Desmos.com: type y = 2x + 1 and see it</li>
+<li>Corey Schafer's Python tutorials or freeCodeCamp's Python course</li>
+<li>Jay Alammar: "A Visual Intro to NumPy"</li></ul></div>
+<div class="row mile"><h3>Milestone project</h3><ul>
+<li>Plot 5 functions (line, parabola, exponential, log, sine) with Matplotlib.</li>
+<li>Write a mean function with plain Python, then redo it in one line with NumPy.</li>
+<li>Time a Python loop against a NumPy operation on 1 million numbers (this is vectorization).</li></ul></div>
+</section>
+
+<section class="phase" id="p2" data-n="2">
+<h2>Linear algebra for AI</h2>
+<p class="wk">Weeks 7-12 · Vectors, matrices, dot products, eigenvalues</p>
+<div class="row"><h3>Core math concepts</h3><ul>
+<li><b>Weeks 7-8:</b> vectors (a list of numbers and an arrow in space), adding and scaling, the dot product, vector length.</li>
+<li><b>Weeks 9-10:</b> matrices, matrix multiplication, transpose, identity, matrices as transformations that stretch, rotate, and squish space.</li>
+<li><b>Weeks 11-12:</b> determinant (how much space gets scaled), inverse, eigenvectors and eigenvalues, and a gentle first look at PCA.</li></ul></div>
+<div class="row"><h3>AI/ML connection</h3><ul>
+<li><b>Vectors describe everything.</b> A photo, a word, or a customer becomes a list of numbers, and similar things get similar lists.</li>
+<li><b>The dot product measures similarity.</b> It is the math behind how Transformers decide which words matter to each other.</li>
+<li><b>Every neural network layer is a matrix multiplication.</b> Learning means adjusting the numbers inside those matrices.</li>
+<li><b>Eigenvectors are directions that don't turn</b> under a transformation: the spine of your data. PCA uses them to find what matters most.</li></ul>
+<p>Analogy: data is a crumpled map, and matrices are the hands that stretch and flatten it until the pattern shows.</p></div>
+<div class="row"><h3>Code application</h3><p>NumPy's <code>np.dot</code>, <code>@</code>, <code>np.linalg.inv</code>, <code>np.linalg.eig</code>, <code>np.linalg.svd</code>, and scikit-learn's PCA.</p></div>
+<div class="row"><h3>Best free visual resources</h3><ul>
+<li>3Blue1Brown: "Essence of Linear Algebra" (watch this first, slowly)</li>
+<li>Immersive Linear Algebra (immersivemath.com), an interactive book</li>
+<li>Khan Academy: Linear Algebra, for practice</li>
+<li>Gilbert Strang's MIT 18.06 lectures, optional later</li></ul></div>
+<div class="row mile"><h3>Milestone project</h3><ul>
+<li>Implement matrix multiplication from scratch with loops and check it against NumPy.</li>
+<li>Build a tiny movie recommender: 5 users and 5 movies as vectors, using cosine similarity to find who is most alike.</li>
+<li>Run PCA on the Iris dataset, squash 4 dimensions to 2, and plot it.</li></ul></div>
+</section>
+
+<section class="phase" id="p3" data-n="3">
+<h2>Calculus for training</h2>
+<p class="wk">Weeks 13-18 · Derivatives, partial derivatives, the chain rule</p>
+<div class="row"><h3>Core math concepts</h3><ul>
+<li><b>Weeks 13-14:</b> how functions change, limits (intuition only), the derivative as slope or speed of change.</li>
+<li><b>Weeks 15-16:</b> derivative rules (power, product, chain), derivatives of eˣ, ln(x), sin, cos, and second derivatives (curvature).</li>
+<li><b>Weeks 17-18:</b> partial derivatives (change one input, freeze the rest), the gradient, and a deep dive on the chain rule, the most important idea here.</li></ul></div>
+<div class="row"><h3>AI/ML connection</h3><p>Training asks one question: "If I nudge this number inside the model, does the error go up or down, and by how much?" That is a derivative.</p><ul>
+<li><b>The derivative is a speedometer</b> for how fast the error changes.</li>
+<li><b>The gradient is a compass</b> pointing uphill. Walk the opposite way to lower the error.</li>
+<li><b>The chain rule is connected gears.</b> A network is many functions stacked together, and the chain rule tells you how turning the first gear moves the last. This is how backpropagation works.</li></ul></div>
+<div class="row"><h3>Code application</h3><p>SymPy for symbolic derivatives, NumPy for numerical ones (nudge x a tiny bit and measure), and a first look at PyTorch autograd (<code>.backward()</code>) confirming your hand calculations.</p></div>
+<div class="row"><h3>Best free visual resources</h3><ul>
+<li>3Blue1Brown: "Essence of Calculus"</li>
+<li>Khan Academy: Differential Calculus, plus the partial derivatives and gradient parts of Multivariable Calculus</li>
+<li>Professor Leonard (YouTube) for slower, classroom-style lessons</li>
+<li>Desmos: draw a curve and drag a tangent line along it</li></ul></div>
+<div class="row mile"><h3>Milestone project</h3><ul>
+<li>Write a function that approximates the derivative of any function numerically and compare it to the exact answer.</li>
+<li>Plot f(x) = x² with tangent lines at several points.</li>
+<li>Find the gradient of f(x, y) = x² + 3y² by hand, then verify it with PyTorch autograd.</li>
+<li>Differentiate a chain like f(g(h(x))) by hand and confirm it numerically.</li></ul></div>
+</section>
+
+<section class="phase" id="p4" data-n="4">
+<h2>Probability &amp; data statistics</h2>
+<p class="wk">Weeks 19-25 · Mean and variance, distributions, Bayes' theorem</p>
+<div class="row"><h3>Core math concepts</h3><ul>
+<li><b>Weeks 19-20:</b> basic probability, "and"/"or" rules, conditional probability, independence.</li>
+<li><b>Week 21:</b> Bayes' theorem (updating beliefs with evidence).</li>
+<li><b>Weeks 22-23:</b> random variables, mean, variance, standard deviation, and key distributions (Uniform, Bernoulli, Binomial, Normal).</li>
+<li><b>Weeks 24-25:</b> the Central Limit Theorem (intuition), correlation vs causation, sampling, maximum likelihood ("which settings make my data least surprising?"), entropy and cross-entropy.</li></ul></div>
+<div class="row"><h3>AI/ML connection</h3><p>The real world is noisy, so models output probabilities, not certainties: not "this is a cat" but "92% cat."</p><ul>
+<li><b>Bayes' theorem is the detective's rule:</b> start with a hunch, find a clue, update your belief.</li>
+<li><b>Distributions describe what "normal" looks like,</b> and are used for weight initialization, noise, and uncertainty.</li>
+<li><b>Cross-entropy,</b> the most common classification loss, measures how surprised the model is by the right answer. Less surprise means a better model.</li></ul></div>
+<div class="row"><h3>Code application</h3><p>Pandas for data, SciPy.stats for distributions, Seaborn and Matplotlib for plots, and <code>np.random</code> for simulations.</p></div>
+<div class="row"><h3>Best free visual resources</h3><ul>
+<li>StatQuest with Josh Starmer: "Statistics Fundamentals," plus his Bayes' Theorem, Normal Distribution, and Cross-Entropy videos</li>
+<li>Seeing Theory (seeing-theory.brown.edu), interactive probability visuals</li>
+<li>Khan Academy: Statistics and Probability</li>
+<li>3Blue1Brown: the Bayes' theorem and Central Limit Theorem videos</li></ul></div>
+<div class="row mile"><h3>Milestone project</h3><ul>
+<li>Simulate 10,000 dice rolls, coin flips, and sample averages, and watch the bell curve appear.</li>
+<li>Build a Naive Bayes spam filter from scratch on a small text dataset.</li>
+<li>Explore a real dataset (mean, variance, histograms, correlations) and write a half-page summary of what you found.</li></ul></div>
+</section>
+
+<section class="phase" id="p5" data-n="5">
+<h2>Optimization &amp; algorithms</h2>
+<p class="wk">Weeks 26-31 · Cost functions, gradient descent, backpropagation</p>
+<div class="row"><h3>Core math concepts</h3><ul>
+<li><b>Weeks 26-27:</b> loss functions (MSE, cross-entropy): "wrongness" as a single number.</li>
+<li><b>Weeks 28-29:</b> gradient descent, learning rate, stochastic and mini-batch versions, the ideas behind momentum and Adam.</li>
+<li><b>Week 30:</b> overfitting vs underfitting, regularization (L1/L2), train/validation/test splits.</li>
+<li><b>Week 31:</b> backpropagation and computational graphs.</li></ul></div>
+<div class="row"><h3>AI/ML connection</h3><p>Everything you have learned comes together here.</p><ul>
+<li><b>Loss function:</b> a score for how wrong the model is.</li>
+<li><b>Gradient descent:</b> walking downhill in thick fog. You can't see the valley, but you can feel the slope, so you step downhill and repeat. The learning rate is your step size: too big and you overshoot, too small and it takes forever.</li>
+<li><b>Backpropagation:</b> tracing blame in a factory. When the final product is defective, you walk backward through every station and ask how much each contributed. The chain rule assigns the blame.</li></ul></div>
+<div class="row"><h3>Code application</h3><p>Pure NumPy first, so nothing is hidden. Then scikit-learn to compare against the official linear and logistic regression.</p></div>
+<div class="row"><h3>Best free visual resources</h3><ul>
+<li>StatQuest: "Gradient Descent, Step-by-Step," the Neural Networks series, and "Backpropagation Main Ideas"</li>
+<li>3Blue1Brown: Neural Networks series, chapters 1-4</li>
+<li>Andrej Karpathy: "Neural Networks: Zero to Hero," starting with the micrograd video (watch once for the story, once while coding along)</li>
+<li>TensorFlow Playground (playground.tensorflow.org): watch a network train and the loss fall</li></ul></div>
+<div class="row mile"><h3>Milestone project</h3><ul>
+<li>Linear regression with gradient descent from scratch in NumPy, plotting the loss falling.</li>
+<li>Logistic regression from scratch for a yes/no problem.</li>
+<li>A 2-layer neural network in pure NumPy (forward pass, loss, backprop, update) that learns XOR or digits.</li>
+<li>Follow along with micrograd so you have seen backprop built by hand once.</li></ul></div>
+</section>
+
+<section class="phase" id="p6" data-n="6">
+<h2>Transition to deep learning</h2>
+<p class="wk">Weeks 32-52 · Neural networks, CNNs, RNNs, Transformers</p>
+<div class="row"><h3>Core math concepts</h3><p>Nothing brand new, only your old tools in new outfits: matrix multiplication in every layer, dot products as attention scores, the chain rule through deeper networks, softmax and cross-entropy for probabilities, and Adam for training.</p>
+<div class="sub"><b>A. PyTorch + neural networks (weeks 32-36)</b>Tensors, autograd, <code>nn.Module</code>, training loops, DataLoaders, activations (ReLU, sigmoid, softmax), dropout, batch norm, free GPUs on Colab and Kaggle. <i>Milestone: MNIST classifier at 97%+ accuracy.</i></div>
+<div class="sub"><b>B. CNNs for images (weeks 37-41)</b>Convolutions, filters, pooling, LeNet and ResNet, transfer learning. <i>Milestone: CIFAR-10 or cats-vs-dogs classifier using a pretrained ResNet.</i></div>
+<div class="sub"><b>C. RNNs and LSTMs for sequences (weeks 42-45)</b>Hidden state, vanishing gradients, LSTM/GRU. <i>Milestone: a character-level text generator.</i></div>
+<div class="sub"><b>D. Attention and Transformers (weeks 46-50)</b>Attention, self-attention, positional encoding, encoder/decoder, how GPT-style models work. <i>Milestone: follow Karpathy's "Let's build GPT" or fine-tune a small Hugging Face model on your own task.</i></div>
+<div class="sub"><b>Capstone (weeks 51-52)</b>One project you care about, end to end: data, model, evaluation, a clean GitHub README, and a short write-up.</div></div>
+<div class="row"><h3>AI/ML connection</h3><ul>
+<li><b>CNNs:</b> a filter is a small magnifying glass sliding over an image, hunting one pattern (an edge, then a curve, then an eye, then a face).</li>
+<li><b>RNNs:</b> reading a sentence word by word while carrying a memory note forward.</li>
+<li><b>Transformers:</b> every word looks at every other word at once and decides who is relevant. That is attention, and it is just dot products plus softmax, which you already know.</li></ul></div>
+<div class="row"><h3>Code application</h3><p>PyTorch (primary), torchvision, Hugging Face Transformers, and Matplotlib or TensorBoard for tracking training.</p></div>
+<div class="row"><h3>Best free visual resources</h3><ul>
+<li>3Blue1Brown: Neural Networks chapters 5-7 (Transformers and attention)</li>
+<li>StatQuest: CNN, RNN/LSTM, Attention, and Transformer videos</li>
+<li>CNN Explainer (poloclub.github.io/cnn-explainer)</li>
+<li>Jay Alammar: "The Illustrated Transformer," and Chris Olah: "Understanding LSTM Networks"</li>
+<li>fast.ai: Practical Deep Learning, plus Stanford CS231n and Karpathy's Zero to Hero for depth</li></ul></div>
+<div class="row mile"><h3>Milestone project</h3><p>Your capstone: a project you care about, published with a clear README, such as image classification on a topic you love, text classification, or fine-tuning a language model.</p></div>
+</section>
+
+</div>
+
+<section class="tips">
+<h2>Tips that make the difference</h2>
+<ol>
+<li><b>Intuition first, formulas second.</b> Watch the visual explanation, then meet the formula. It will already make sense.</li>
+<li><b>Code every concept.</b> If you can build it from scratch, you understand it.</li>
+<li><b>Never skip the milestone.</b> It shows what you actually know versus what only felt familiar while watching.</li>
+<li><b>Keep a "stuck log."</b> Write down what confused you and revisit it in two weeks. Half of it will have resolved itself.</li>
+<li><b>Put every milestone on GitHub with a short README.</b> By week 52 you will have a portfolio that shows your growth.</li>
+<li><b>Practice on Kaggle</b> once you reach Phase 4 or 5, and see how others approach problems.</li>
+<li><b>Be kind to yourself.</b> Feeling lost on a new topic means you are learning. Go back one video, try again, and move on.</li>
+</ol>
+<p class="end"><b>Weekly rhythm for every phase:</b> 3 sessions watching and reading (pause to predict what comes next), 2 sessions coding the idea yourself, 1 session of practice problems plus a short note explaining it in your own words.</p>
+</section>
+</main>
+</body>
+</html>
